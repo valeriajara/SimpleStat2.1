@@ -54,4 +54,8 @@ export class RegistroPage {
     }
   }
 
+  creditos(){
+    this.navCtrl.push('CreditosPage');
+  }
+
 }

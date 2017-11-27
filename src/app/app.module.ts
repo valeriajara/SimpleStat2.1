@@ -16,12 +16,14 @@ import { HipergeometricaPage } from '../pages/hipergeometrica/hipergeometrica';
 import { NormalPage } from '../pages/normal/normal';
 import { PoissonPage } from '../pages/poisson/poisson';
 import { TstudentPage } from '../pages/tstudent/tstudent';
+import { FirebaseService } from '../providers/firebase-service/firebase-service';
+
 
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
-import { HttpModule } from '@angular/http';
-import { FirebaseService } from '../providers/firebase-service/firebase-service';
+
+
 
 let firebaseConfig = {
   apiKey: "AIzaSyDFEuzvSX8Un4nuyCB9VJH_KJshOLyZ7E8",
@@ -31,7 +33,8 @@ let firebaseConfig = {
   storageBucket: "cmc6412-ce6d7.appspot.com",
   messagingSenderId: "1071999255266"
 };
- 
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -45,6 +48,8 @@ let firebaseConfig = {
     PoissonPage,
     TstudentPage,
     MathJaxDirective,
+    //LoginPage,
+
   ],
   imports: [
     BrowserModule,
@@ -64,7 +69,10 @@ let firebaseConfig = {
     HipergeometricaPage,
     NormalPage,
     PoissonPage,
-    TstudentPage
+    TstudentPage,
+   //LoginPage,
+
+    
   ],
   providers: [
     StatusBar,

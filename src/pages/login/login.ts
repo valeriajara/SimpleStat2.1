@@ -61,6 +61,10 @@ export class LoginPage {
     this.navCtrl.push("RegistroPage");
   }
 
+  creditos(){
+    this.navCtrl.push('CreditosPage');
+  }
+
   resetPassword(){
     let prompt = this.alertCtrl.create({
       title: 'Restablecer Contraseña',
